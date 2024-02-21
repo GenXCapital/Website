@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Gwon</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+
+<body class="centered">
+    <div class="sidenav">
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#service">Services</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section id="home">
+        <h1>GenXCapital</h1>
+        <p>Expertise. Commitment. Value.
+        </p>
+        <div class="socials">
+            <button class="social-button"><a href="https://www.linkedin.com/in/jasongwon/" target="_blank"><i class="fa fa-linkedin-square" style="color:rgb(10, 102, 194)"></i></a></button>
+            <button class="social-button"><a href="https://github.com/gwon0002" target="_blank"><i class="fa fa-github" style="color:black"></i></a></button>
+            <button class="social-button"><a href="https://www.instagram.com/jasongwon/" target="_blank"><i class="fa fa-instagram" style="color:purple"></i></a></button>
+            <button class="social-button"><a href="mailto:jasongwon.official@gmail.com" target="_blank"><i class="fa fa-envelope" style="color:rgb(225, 98, 79)"></i></a></button>
+        </div>
+    </section>
+
+    <section id="profile">
+        
+        <h1>Company Profile</h1>
+        <p>
+            Established in 2023, GenXCapital is a Hedge Fund 
+            <br>​and Venture Capital offering affordable portfolio
+            <br>diversification solutions to individuals 
+            <br>and local and ​international businesses.
+        </p>
+        <!--
+        <br><br><br>
+        <img src="images/image.jpg" alt="Your Photo" class="profile-photo" width="300" height="300"> -->
+    </section>
+
+    <section id="service">
+        <h1>Our Services</h1>
+        <div class="contact-info"></div>
+            <p>Check out our services</p>
+        </div>
+    </section>
+
+    <section id="project">
+        <h1>Projects</h1>
+        <div class="contact-info"></div>
+            <p>Check out my GitHub repository</p>
+            <div class="socials">
+                <button class="social-button"><a href="https://github.com/gwon0002" target="_blank"><i class="fa fa-github" style="color:black"></i></a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-info">
+            <a href="mailto:jasongwon.official@gmail.com">genxcapital.official@gmail.com</a>
+            <p>Connect with us via the links below</p>
+            <div class="socials">
+                <button class="social-button"><a href="https://www.linkedin.com/in/jasongwon/" target="_blank"><i class="fa fa-linkedin-square" style="color:rgb(10, 102, 194)"></i></a></button>
+                <button class="social-button"><a href="https://github.com/gwon0002" target="_blank"><i class="fa fa-github" style="color:black"></i></a></button>
+                <button class="social-button"><a href="https://www.instagram.com/jasongwon/" target="_blank"><i class="fa fa-instagram" style="color:purple"></i></a></button>
+                <button class="social-button"><a href="mailto:jasongwon.official@gmail.com" target="_blank"><i class="fa fa-envelope" style="color:rgb(225, 98, 79)"></i></a></button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+    
+            // Highlight active section in the navigation
+            window.addEventListener('scroll', function () {
+                let currentSection = '';
+    
+                document.querySelectorAll('section').forEach(section => {
+                    const sectionTop = section.offsetTop - 200;
+                    const sectionHeight = section.clientHeight;
+    
+                    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                        currentSection = section.id;
+                    }
+                });
+    
+                // Add 'active' class to the corresponding navigation link
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

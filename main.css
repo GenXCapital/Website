@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma', sans-serif;
+    background-color: lightgray;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidenav a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidenav a:hover {
+    color: #ff9900;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma', sans-serif;
+    background-color: lightgray;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+section#home {
+    padding: 80px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+#profile {
+    background-color: lightgray;
+}
+
+#resume {
+    background-color: lightgray;
+}
+
+#project {
+    background-color: white;
+}
+
+#contact {
+    background-color: white;
+}
+
+section#profile {
+    padding: 80px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; /* Adjust the max-width based on your preference */
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+h1 {
+    color: rgb(80, 78, 78); /* Corrected the color code */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#profile {
+    padding: 80px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Center the section horizontally */
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+#profile .profile-photo {
+    max-width: 100%;
+    border-radius: 10%;
+    margin-bottom: 0px;
+}
+
+section#home {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Center the section horizontally */
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+#home h1 {
+    color: rgb(80, 78, 78);
+    font-size: 40px;
+    margin-bottom: 00px;
+}
+
+#home p {
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#profile h1 {
+    margin-bottom: 0px; /* Adjust the value to reduce or increase space */
+}
+
+#profile p {
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#project p {
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+#contact p {
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+p {
+    color: rgb(80, 78, 78); /* Corrected the color code */
+}
+
+.social-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 38px; /* Adjust the font-size based on your preference */
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+#project h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+section#project {
+    flex-direction: column;
+}
+
+#contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section#contact {
+    flex-direction: column;
+}
+
+section#resume {
+    flex-direction: column;
+}
+
+.contact-info a {
+    font-size: 20px; /* Adjust the font size based on your preference */
+}
+
+.social-button a {
+    font-size: 38px; /* Adjust the font size based on your preference */
+}
+
+.resume-view {
+    font-size: 22px; /* Adjust the font size based on your preference */
+    color: rgb(33, 33, 230); /* Set the initial font color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease-in-out; /* Add transition for font color */
+}
+
+.resume-view:hover {
+    color: white; /* Set the font color on hover */
+}
+
+.contact-info a {
+    color: navy; /* Set the initial text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Set the transition effect for the color change */
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+    color: gray;
+}
+
+#service {
+    background-color: lightgray;
+}
+
+section#service {
+    padding: 80px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; /* Adjust the max-width based on your preference */
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+#service h1 {
+    color: rgb(80, 78, 78);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#service p {
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
