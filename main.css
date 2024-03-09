@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tahoma', sans-serif;
-    background-color: lightgray;
+    background-color: white;
 }
 
 .sidenav {
@@ -46,7 +46,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #black;
     color: #fff;
     padding: 20px 0;
     position: fixed;
