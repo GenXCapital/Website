@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tahoma', sans-serif;
-    background-color: lightgray;
+    background-color: black;
 }
 
 .sidenav {
@@ -16,7 +16,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: black;
     padding-top: 20px;
     color: white;
     display: flex;
@@ -46,7 +46,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     padding: 20px 0;
     position: fixed;
@@ -124,7 +124,7 @@ section#profile {
 }
 
 h1 {
-    color: rgb(80, 78, 78); /* Corrected the color code */
+    color: black; /* Corrected the color code */
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -292,7 +292,7 @@ section#service {
 }
 
 #service h1 {
-    color: rgb(80, 78, 78);
+    color: black;
     font-size: 36px;
     margin-bottom: 20px;
 }
