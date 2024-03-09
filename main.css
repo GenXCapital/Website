@@ -70,11 +70,11 @@ section#home {
 }
 
 #profile {
-    background-color: lightgray;
+    background-color: white;
 }
 
 #resume {
-    background-color: lightgray;
+    background-color: white;
 }
 
 #project {
@@ -169,7 +169,7 @@ section#home {
 }
 
 p {
-    color: rgb(80, 78, 78); /* Corrected the color code */
+    color: black; /* Corrected the color code */
 }
 
 .social-button {
@@ -250,7 +250,7 @@ section#resume {
 }
 
 #service {
-    background-color: lightgray;
+    background-color: white;
 }
 
 section#service {
