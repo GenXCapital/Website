@@ -81,8 +81,14 @@ section#home {
     background-color: white;
 }
 
-#contact {
-    background-color: white;
+#contact 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns content to top and copyright to bottom */
+    height: 100vh; /* Ensures the section takes full viewport height */
+    padding: 20px 40px; /* Adjust padding as needed */
+    text-align: center; /* Centers the text */
 }
 
 section#profile {
@@ -181,9 +187,11 @@ p {
     font-size: 38px; /* Adjust the font-size based on your preference */
 }
 
-.socials {
+.socials 
+{
     display: flex;
-    gap: 10px;
+    justify-content: center; /* Center social buttons horizontally */
+    gap: 10px; /* Space between buttons */
 }
 
 #service h1 {
@@ -204,11 +212,14 @@ section#service {
     align-items: center; /* Center items horizontally */
 }
 
-.contact-info {
+.contact-info 
+{
+    /* Ensure this container doesn't expand too much */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* Center its content vertically */
+    gap: 20px; /* Space out elements */
 }
 
 section#contact {
