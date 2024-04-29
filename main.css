@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tahoma', sans-serif;
-    background-color: Navy;
+    background-color: black;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: gray;
 }
 
 body {
@@ -45,7 +45,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: rgb(47, 47, 226);
     color: #fff;
     padding: 20px 0;
     position: fixed;
