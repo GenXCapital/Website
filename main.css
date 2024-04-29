@@ -81,14 +81,8 @@ section#home {
     background-color: white;
 }
 
-#contact 
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Aligns content to top and copyright to bottom */
-    height: 100vh; /* Ensures the section takes full viewport height */
-    padding: 20px 40px; /* Adjust padding as needed */
-    text-align: center; /* Centers the text */
+#contact {
+    background-color: white;
 }
 
 section#profile {
@@ -187,11 +181,9 @@ p {
     font-size: 38px; /* Adjust the font-size based on your preference */
 }
 
-.socials 
-{
+.socials {
     display: flex;
-    justify-content: center; /* Center social buttons horizontally */
-    gap: 10px; /* Space between buttons */
+    gap: 10px;
 }
 
 #service h1 {
@@ -212,14 +204,11 @@ section#service {
     align-items: center; /* Center items horizontally */
 }
 
-.contact-info 
-{
-    /* Ensure this container doesn't expand too much */
-    flex-grow: 1;
+.contact-info {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center its content vertically */
-    gap: 20px; /* Space out elements */
+    align-items: center;
+    text-align: center;
 }
 
 section#contact {
@@ -259,4 +248,3 @@ section#resume {
 .contact-info a:focus {
     color: black;
 }
-
